@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Bad+Script&family=Licorice&family=Montserrat:wght@100;200;300&family=Oooh+Baby&family=Poppins:wght@100;200;300;400&display=swap');
+
+@media (max-width: 5000px) {
+  .container {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 350px;
+    margin: 0 auto;
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: rgb(71, 71, 71);
+  text-align: center;
+  background-image: url(images/pexels-jess-loiterton-4321085.jpg);
+  background-size: 115% auto;
+  background-attachment: fixed;
+  margin: 15px;
+}
+
+h1, h2 {
+  color:#429b9b;
+  font-family: 'Licorice', cursive;
+  margin: 15px;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.avatar {
+  width: 150px;
+  border-radius: 50%;
+}
+
+a.btn-turquoise {
+  background-color: #429b9b;
+  color: rgb(240,240,240);
+  margin: 10px;
+  padding: 16px 24px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+a.btn-turquoise:hover {
+  background-color: #e46883;
+  transition: 1s;
+}
+
+.card-white {
+  background: rgba(246, 240, 252, 0.8);
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+ul.list-inline {
+  list-style: none;
+  padding-left: 0px;
+  margin:0;
+}
+
+ul.list-inline li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+ul.list-inline a {
+  color: rgb(71, 71, 71);
+  font-size: 42px;
+}
+
+ul.list-inline a:hover {
+  color: #e46883;
+  transition: 1s;
+}
