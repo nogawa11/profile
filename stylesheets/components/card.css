@@ -1,0 +1,142 @@
+.projects {
+  display: flex;
+  justify-content: center;
+}
+
+.projects.hide {
+  display: none;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.card-project {
+  position: relative;
+}
+
+.card-project img {
+  height: 150px;
+  width: 220px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+}
+
+.card-project-text {
+  background: linear-gradient(85deg, rgb(36 59 61 / 86%) 0%, rgb(41 66 51 / 30%) 100%);
+  color: rgb(255 255 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  font-family: 'Raleway';
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+.card-project-text:hover {
+  background: none;
+  color: rgba(0,0,0,0);
+  transition: 0.5s;
+}
+
+.card-info {
+  background: #fefefe;
+  display: block;
+  padding: 30px;
+  margin: 16px 0 24px 0;
+  border-radius: 8px;
+  box-shadow: 0px 5px 50px 1px rgb(119 166 187 / 34%);
+}
+
+.card-info.hide {
+  display: none;
+}
+
+.card-info a {
+  color: rgb(86 107 119);
+  font-size: 32px;
+  transition: 0.6s;
+}
+
+.card-info a:hover {
+  color:rgb(114 167 169);
+}
+
+.card-info-details {
+  background: #fefefe;
+  display: block;
+  padding: 30px;
+  margin: 0 0 32px 0;
+  border-radius: 8px;
+  box-shadow: 0px 5px 50px 1px rgb(119 166 187 / 34%);
+}
+
+.card-info-details.hide {
+  display: none;
+}
+
+.card-info-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.header-card-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 8px;
+}
+
+.header-card-details > h3 {
+  font-weight: 500;
+  font-size: 22px;
+  padding: 0;
+  margin: 0 12px 0 0;
+}
+
+.card-details {
+  display: flex;
+  align-items: center;
+}
+
+.card-details-images-neighborhud img, .card-details-images img {
+  height: 250px;
+}
+
+.card-details p {
+  text-align: left;
+}
+
+.card-details-images {
+  margin-right: 16px;
+}
+
+.card-details-images-neighborhud {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  margin-right: 16px;
+}
+
+.card-details-icons {
+  margin: 12px 0 4px 0;
+}
+
+.card-details-icons i {
+  color: rgb(86 107 119);
+  font-size: 20px;
+}

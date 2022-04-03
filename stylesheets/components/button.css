@@ -1,0 +1,45 @@
+.btn-card-detail-back {
+  color: rgb(114 167 169);
+  background: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.btn-card-detail-back:hover {
+  color: rgb(50, 108, 110);
+}
+
+.btn-project {
+  border: 0;
+  background: none;
+  padding: 0;
+}
+
+.btn-card-details {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 8px;
+  gap: 4px;
+}
+
+.btn-card-details a {
+  background-color:rgb(89, 171, 174);
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 2px 12px;
+  border-radius: 50px;
+  transition: 0.6s;
+}
+
+.btn-card-details a:hover {
+  background-color:rgb(67, 137, 139);
+  color: white;
+}

@@ -1,0 +1,27 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 8px 0 16px 0;
+}
+
+.btn-nav {
+  background-color: rgba(0,0,0,0);
+  color: rgb(114 167 169);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 0;
+  transition: 0.5s;
+}
+
+.btn-nav:hover {
+  color: rgb(50, 108, 110);
+  transition: 0.5s;
+}
+
+.btn-nav.active {
+  color: rgb(50, 108, 110);
+  font-weight: 500;
+}
