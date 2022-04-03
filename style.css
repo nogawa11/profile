@@ -171,9 +171,22 @@ p {
   padding: 0;
 }
 
-/* .button a {
+.header-card-details {
+  display: flex;
+  margin-bottom: 8px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.header-card-details > h3 {
+  margin: 0 12px 0 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+.btn-card-details a {
   color: white;
-  background-color:rgb(89, 142, 177);
+  background-color:rgb(89, 171, 174);
   padding: 2px 12px;
   text-decoration: none;
   border-radius: 50px;
@@ -183,10 +196,50 @@ p {
   font-weight: 300;
 }
 
-.button a:hover {
-  background-color:rgb(53, 91, 117);
-} */
+.btn-card-details a:hover {
+  color: white;
+  background-color:rgb(67, 137, 139);
+}
 
+.btn-card-details {
+  display: flex;
+  gap: 4px;
+  align-items: flex-end;
+  margin-top: 8px;
+}
+
+.card-details-icons {
+  margin: 12px 0 4px 0;
+}
+
+.card-details-icons i {
+  color: rgb(86 107 119);
+  font-size: 20px;
+}
+
+.card-details-images-neighborhud {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  margin-right: 16px;
+}
+
+.card-details-images {
+  margin-right: 16px;
+}
+
+.card-details-images-neighborhud img, .card-details-images img {
+  height: 250px;
+}
+
+.card-details {
+  display: flex;
+  align-items: center;
+}
+
+.card-details p {
+  text-align: left;
+}
 
 @media only screen and (max-width: 600px) {
   body {
