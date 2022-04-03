@@ -24,7 +24,7 @@ h3 {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-top: 8px;
+  margin: 8px 0 16px 0;
 }
 
 .btn-nav {
@@ -38,8 +38,14 @@ h3 {
 }
 
 .projects {
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
 }
 
 .card-project img {
