@@ -44,20 +44,25 @@
   color: white;
 }
 
-.btn-slide-1-right, .btn-slide-1-left, .btn-slide-2-right, .btn-slide-2-left {
+.btn-slide-1-right,
+.btn-slide-1-left,
+.btn-slide-2-right,
+.btn-slide-2-left {
   background: none;
   border: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
-.fa-angle-left, .fa-angle-right {
+.fa-angle-left,
+.fa-angle-right {
   color: rgb(204 179 220);
   font-size: 30px;
   transition: 0.5s;
 }
 
-.fa-angle-left:hover, .fa-angle-right:hover {
+.fa-angle-left:hover,
+.fa-angle-right:hover {
   color: rgb(142 172 232);
   font-size: 30px;
 }

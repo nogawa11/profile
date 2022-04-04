@@ -5,8 +5,6 @@
 
 body {
   background: linear-gradient(85deg, rgb(249 255 247) 0%, rgb(242 255 254) 100%);
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
   background-image: url('../images/121.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -15,13 +13,16 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
   padding: 0;
+  margin: 0;
 }
 
 .main {
   margin: 40px 0 0 0;
 }
+
 .content {
   width: 75%;
   max-width: 700px;
@@ -70,10 +71,7 @@ p {
   margin: 0;
 }
 
-img {
-  border-radius: 4px;
-}
-
+img,
 video {
   border-radius: 4px;
 }
@@ -88,6 +86,10 @@ video {
   display: none;
 }
 
+.report {
+  display: none;
+}
+
 .footer {
   font-family: inherit;
   color: rgb(204 179 220);
@@ -95,111 +97,95 @@ video {
   letter-spacing: 2px;
 }
 
-.report {
-  display: none;
-}
-
 @media only screen and (max-width: 499px) {
-  .nav {
-    gap: 1px;
-  }
-
-  .btn-nav {
-    font-size: 12px;
-  }
-
   .content {
     width: 95%;
   }
-
-  .card-info {
-    padding: 20px;
+  .nav {
+    gap: 1px;
   }
-
+  .btn-nav {
+    font-size: 12px;
+  }
+  .slide-1.hide,
+  .slide-2.hide {
+    display: flex;
+  }
+  .slide-1 {
+    margin-bottom: 12px;
+  }
+  .btn-slide-1-left,
+  .btn-slide-1-right,
+  .btn-slide-2-left,
+  .btn-slide-2-right {
+    display: none;
+  }
+  .slide-comment {
+    display: none;
+  }
   .cards {
     display: grid;
     grid-template-columns: 1fr;
     gap: 12px;
   }
-
-  .btn-slide-1-left, .btn-slide-1-right, .btn-slide-2-left, .btn-slide-2-right {
-    display: none;
+  .card-info {
+    padding: 20px;
   }
-
-  .slide-1.hide, .slide-2.hide {
-    display: flex;
-  }
-
   .card-project img {
     height: 170px;
     width: 350px;
     object-position: top;
     border-radius: 8px;
   }
-
-  .slide-comment {
-    display: none;
-  }
-
   .card-project-text {
-    transition: 0.5s;
+    background: linear-gradient(1deg, rgb(94 73 153 / 70%) 0%, rgb(255 255 255 / 0%) 100%);
+    color: rgb(255 255 255);
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
+    top: 60%;
+    height: 40%;
     width: 100%;
-    background: linear-gradient(85deg, rgba(81, 67, 122, 0.86) 0%, rgba(116, 80, 139, 0.3) 100%);
-    color: rgb(255 255 255);
-    font-size: 14px;
     font-family: 'Raleway';
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 500;
     text-align: center;
+    text-shadow: 0px 2px 11px #3d2a62c9;
     letter-spacing: 2px;
     word-wrap: break-word;
+    transition: 0.5s;
     border-radius: 8px;
   }
-
   .card-project-text:hover {
     background: none;
     color: rgba(0,0,0,0);
-    cursor: crosshair;
     border-radius: 4px;
     transition: 0.5s;
-    border-radius: 4px;
+    cursor: crosshair;
   }
-
-  .card-details-images-neighborhud img {
-    height: 200px;
-  }
-
-  .slide-1 {
-    margin-bottom: 12px;
-  }
-
-  .header-card-details > h3 {
-    font-size: 18px;
-  }
-
   .card-details {
     display: block;
   }
-
-  .card-details-images, .card-details-images-neighborhud {
+  .card-details-header > h3 {
+    font-size: 18px;
+  }
+  .card-details-images,
+  .card-details-images-neighborhud {
     margin: 0 0 16px 0;
   }
-
+  .card-details-images-neighborhud img {
+    height: 200px;
+  }
+  .card-details-images video,
+  .card-details-images img {
+    height: auto;
+    width: 100%;
+  }
   .btn-card-details a {
     font-size: 14px;
     font-weight: 400;
     padding: 2px 16px;
-  }
-
-  .card-details-images video, .card-details-images img {
-    height: auto;
-    width: 100%;
   }
 }
 
@@ -213,69 +199,65 @@ video {
   .btn-nav {
     font-size: 12px;
   }
-
-  .card-details-images-neighborhud {
+  .cards {
+    gap: 8px;
     grid-template-columns: 1fr 1fr;
   }
-
-  .card-details-images-neighborhud img {
-    height: 150px;
-  }
-
-  .feed {
-    display: none;
-  }
-
-  .header-card-details > h3 {
-    font-size: 18px;
-  }
-
-  .card-info-details {
-    padding: 24px;
-  }
-
-  .btn-card-details a {
-    font-size: 10px;
-    padding: 2px 8px;
-  }
-
-  .card-details-icons i {
-    font-size: 18px;
-  }
-
-  .card-details-icons {
-    margin: 8px 0 4px 0;
-  }
-
-  .todo-list-video video, .countdown-video video, .ip-tracker-video video, .job-listings-filter-video video, .tip-calculator-video video, .interactive-rating-video video {
-    height: 150px;
-  }
-
-  .uchuu-image img, .watchlist-image img {
-    height: 150px;
-  }
-
-  .medium-article-copy-image img, .longest-word-game-image img, .simple-airbnb-copy-image img, .simple-yelp-copy-image img, .simple-landing-page-image img, .simple-wikinimous-copy-image img {
-    height: 125px;
-  }
-
   .cards > p {
     font-size: 10px;
   }
-
   .card-project-text:hover {
     font-size: 12px;
     transition: 0.5s;
   }
-
   .card-project img {
     height: 140px;
     width: 200px;
   }
-
-  .cards {
-    gap: 8px;
+  .card-info-details {
+    padding: 24px;
+  }
+  .card-details-header > h3 {
+    font-size: 18px;
+  }
+  .card-details-images-neighborhud {
     grid-template-columns: 1fr 1fr;
+  }
+  .card-details-images-neighborhud img {
+    height: 150px;
+  }
+  .feed {
+    display: none;
+  }
+  .card-details-icons {
+    margin: 8px 0 4px 0;
+  }
+  .card-details-icons i {
+    font-size: 18px;
+  }
+  .btn-card-details a {
+    font-size: 10px;
+    padding: 2px 8px;
+  }
+  .countdown-video video,
+  .interactive-rating-video video,
+  .ip-tracker-video video,
+  .job-listings-filter-video video,
+  .tip-calculator-video video,
+  .todo-list-video video {
+    height: 150px;
+  }
+  .uchuu-image img,
+  .watchlist-image img {
+    height: 150px;
+  }
+  .longest-word-game-image img,
+  .medium-article-copy-image img,
+  .simple-airbnb-copy-image img,
+  .simple-landing-page-image img,
+  .simple-wikinimous-copy-image img,
+  .simple-yelp-copy-image img {
+    height: 125px;
   }
 }
 
@@ -283,56 +265,52 @@ video {
   .content {
     width: 85%;
   }
-
   .nav {
     gap: 8px;
   }
-
-  .card-details-images-neighborhud {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .card-details-images-neighborhud img {
-    height: 150px;
-  }
-
-  .feed {
-    display: none;
-  }
-
-  .header-card-details > h3 {
-    font-size: 18px;
-  }
-
-  .uchuu-image img, .watchlist-image img {
-    height: 150px;
-  }
-
-  .todo-list-video video, .countdown-video video, .interactive-rating-video video{
-    height: 200px;
-  }
-
-  .ip-tracker-video video, .job-listings-filter-video video, .tip-calculator-video video {
-    height: 150px;
-  }
-
-  .medium-article-copy-image img, .longest-word-game-image img, .simple-airbnb-copy-image img, .simple-yelp-copy-image img, .simple-landing-page-image img, .simple-wikinimous-copy-image img {
-    height: 125px;
-  }
-
-  .card-project img {
-    height: 150px;
-    width: 220px;
-  }
-
   .cards {
     gap: 8px;
     grid-template-columns: 1fr 1fr;
   }
-
   .card-project-text:hover {
     font-size: 14px;
     transition: 0.5s;
+  }
+  .card-project img {
+    height: 150px;
+    width: 220px;
+  }
+  .card-details-header > h3 {
+    font-size: 18px;
+  }
+  .card-details-images-neighborhud {
+    grid-template-columns: 1fr 1fr;
+  }
+  .card-details-images-neighborhud img {
+    height: 150px;
+  }
+  .feed {
+    display: none;
+  }
+  .longest-word-game-image img,
+  .medium-article-copy-image img,
+  .simple-airbnb-copy-image img,
+  .simple-landing-page-image img,
+  .simple-wikinimous-copy-image img,
+  .simple-yelp-copy-image img {
+    height: 125px;
+  }
+  .ip-tracker-video video,
+  .job-listings-filter-video video,
+  .tip-calculator-video video,
+  .uchuu-image img,
+  .watchlist-image img {
+    height: 150px;
+  }
+  .countdown-video video,
+  .interactive-rating-video video,
+  .todo-list-video video {
+    height: 200px;
   }
 }
 
@@ -340,100 +318,93 @@ video {
   .content {
     width: 85%;
   }
-
-  .card-details-images-neighborhud {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .card-details-images-neighborhud img {
-    height: 150px;
-  }
-
-  .feed {
-    display: none;
-  }
-
   .nav {
     gap: 8px;
   }
-
-  .header-card-details > h3 {
-    font-size: 18px;
-  }
-
-  .uchuu-image img, .watchlist-image img {
-    height: 150px;
-  }
-
-  .todo-list-video video, .countdown-video video, .interactive-rating-video video{
-    height: 200px;
-  }
-
-  .ip-tracker-video video, .job-listings-filter-video video, .tip-calculator-video video {
-    height: 150px;
-  }
-
-  .medium-article-copy-image img, .longest-word-game-image img, .simple-airbnb-copy-image img, .simple-yelp-copy-image img, .simple-landing-page-image img, .simple-wikinimous-copy-image img {
-    height: 125px;
-  }
-
   .cards {
     gap: 4px;
   }
-
-  .card-project img {
-    height: 120px;
-    width: 170px;
-  }
-
   .card-project-text:hover {
     font-size: 12px;
     transition: 0.5s;
   }
-
+  .card-project img {
+    height: 120px;
+    width: 170px;
+  }
+  .card-details-header > h3 {
+    font-size: 18px;
+  }
+  .card-details-images-neighborhud {
+    grid-template-columns: 1fr 1fr;
+  }
+  .card-details-images-neighborhud img {
+    height: 150px;
+  }
+  .feed {
+    display: none;
+  }
+  .longest-word-game-image img,
+  .medium-article-copy-image img,
+  .simple-airbnb-copy-image img,
+  .simple-landing-page-image img,
+  .simple-wikinimous-copy-image img,
+  .simple-yelp-copy-image img {
+    height: 125px;
+  }
+  .ip-tracker-video video,
+  .job-listings-filter-video video,
+  .tip-calculator-video video,
+  .uchuu-image img,
+  .watchlist-image img {
+    height: 150px;
+  }
+  .countdown-video video,
+  .interactive-rating-video video,
+  .todo-list-video video {
+    height: 200px;
+  }
 }
 
 @media only screen and (min-width: 651px) and (max-width: 710px) {
   .content {
     width: 85%;
   }
-
-  .ip-tracker-video video, .job-listings-filter-video video, .tip-calculator-video video {
-    height: 200px;
-  }
-
-  .watchlist-image img {
-    height: 175px;
-  }
-
-  .medium-article-copy-image img, .longest-word-game-image img, .simple-airbnb-copy-image img, .simple-yelp-copy-image img, .simple-landing-page-image img, .simple-wikinimous-copy-image img {
-    height: 150px;
-  }
-
-  .report {
-    display: block;
-  }
-
-  .card-details-images-neighborhud {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .card-details-images-neighborhud img {
-    height: 150px;
-  }
-
   .cards {
     gap: 8px;
   }
-
+  .card-project-text:hover {
+    font-size: 12px;
+    transition: 0.5s;
+  }
   .card-project img {
     height: 130px;
     width: 180px;
   }
-
-  .card-project-text:hover {
-    font-size: 12px;
-    transition: 0.5s;
+  .card-details-images-neighborhud {
+    grid-template-columns: 1fr 1fr;
+  }
+  .card-details-images-neighborhud img {
+    height: 150px;
+  }
+  .report {
+    display: block;
+  }
+  .longest-word-game-image img,
+  .medium-article-copy-image img,
+  .simple-airbnb-copy-image img,
+  .simple-landing-page-image img,
+  .simple-wikinimous-copy-image img,
+  .simple-yelp-copy-image img {
+    height: 150px;
+  }
+  .watchlist-image img {
+    height: 175px;
+  }
+  .ip-tracker-video video,
+  .job-listings-filter-video video,
+  .tip-calculator-video video {
+    height: 200px;
   }
 }
 
@@ -441,32 +412,27 @@ video {
   .content {
     width: 85%;
   }
-
-  .card-project img {
-    height: 125px;
-    width: 175px;
+  .cards {
+    gap: 12px;
   }
-
-  .medium-article-copy-image img, .longest-word-game-image img, .simple-airbnb-copy-image img, .simple-yelp-copy-image img, .simple-landing-page-image img, .simple-wikinimous-copy-image img {
-    height: 200px;
-  }
-
   .card-project-text:hover {
     font-size: 12px;
     transition: 0.5s;
   }
-
-  .cards {
-    gap: 12px;
-  }
-
   .card-project img {
     height: 130px;
     width: 180px;
   }
-
   .card-details-images-neighborhud img {
     height: 150px;
+  }
+  .longest-word-game-image img,
+  .medium-article-copy-image img,
+  .simple-airbnb-copy-image img,
+  .simple-landing-page-image img,
+  .simple-wikinimous-copy-image img,
+  .simple-yelp-copy-image img {
+    height: 200px;
   }
 }
 
@@ -474,22 +440,19 @@ video {
   .content {
     width: 85%;
   }
-
-  .card-details-images-neighborhud img {
-    height: 150px;
-  }
-
-  .medium-article-copy-image img, .longest-word-game-image img {
-    height: 200px;
-  }
-
   .cards {
     gap: 12px;
   }
-
   .card-project img {
     height: 130px;
     width: 180px;
+  }
+  .card-details-images-neighborhud img {
+    height: 150px;
+  }
+  .longest-word-game-image img,
+  .medium-article-copy-image img {
+    height: 200px;
   }
 }
 
@@ -497,8 +460,8 @@ video {
   .card-details-images-neighborhud img {
     height: 200px;
   }
-
-  .medium-article-copy-image img, .longest-word-game-image img {
+  .longest-word-game-image img,
+  .medium-article-copy-image img {
     height: 200px;
   }
 }
