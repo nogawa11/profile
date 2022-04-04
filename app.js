@@ -46,6 +46,16 @@ const navBtns = [projectNavBtn, aboutNavBtn, skillsNavBtn, socialsNavBtn]
 
 const backBtns = document.querySelectorAll(".btn-card-detail-back");
 
+const slideOneRightBtn = document.querySelector(".btn-slide-1-right");
+const slideOneLeftBtn = document.querySelector(".btn-slide-1-left");
+const slideTwoRightBtn = document.querySelector(".btn-slide-2-right");
+const slideTwoLeftBtn = document.querySelector(".btn-slide-2-left");
+
+const slideOne = document.querySelector(".slide-1")
+const slideTwo = document.querySelector(".slide-2")
+
+const slides = [slideOne, slideTwo]
+
 projectNavBtn.addEventListener("click", (event) => {
   event.preventDefault();
   navBtns.forEach((btn) => {
@@ -238,3 +248,35 @@ backBtns.forEach((btn) => {
     projectCard.classList.remove("hide");
   });
 });
+
+slideOneRightBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  slides.forEach((slide) => {
+    slide.classList.add("hide");
+  });
+  slideTwo.classList.remove("hide");
+})
+
+slideOneLeftBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  slides.forEach((slide) => {
+    slide.classList.add("hide");
+  });
+  slideTwo.classList.remove("hide");
+})
+
+slideTwoRightBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  slides.forEach((slide) => {
+    slide.classList.add("hide");
+  });
+  slideOne.classList.remove("hide");
+})
+
+slideTwoLeftBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  slides.forEach((slide) => {
+    slide.classList.add("hide");
+  });
+  slideOne.classList.remove("hide");
+})
