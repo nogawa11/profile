@@ -1,6 +1,8 @@
 .projects {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 24px;
 }
 
 .projects.hide {
@@ -11,7 +13,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
-  margin-bottom: 24px;
 }
 
 .card-project {
@@ -27,8 +28,9 @@
 }
 
 .card-project-text {
-  background: linear-gradient(85deg, rgb(36 59 61 / 86%) 0%, rgb(41 66 51 / 30%) 100%);
-  color: rgb(255 255 255);
+  background: none;
+  color: rgba(0,0,0,0);
+  transition: 0.5s;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,6 +39,12 @@
   top: 0;
   height: 100%;
   width: 100%;
+  cursor: crosshair;
+}
+
+.card-project-text:hover {
+  background: linear-gradient(85deg, rgba(81, 67, 122, 0.86) 0%, rgba(116, 80, 139, 0.3) 100%);
+  color: rgb(255 255 255);
   font-size: 14px;
   font-family: 'Raleway';
   font-weight: 400;
@@ -47,19 +55,13 @@
   transition: 0.5s;
 }
 
-.card-project-text:hover {
-  background: none;
-  color: rgba(0,0,0,0);
-  transition: 0.5s;
-}
-
 .card-info {
   background: #fefefe;
   display: block;
   padding: 30px;
   margin: 16px 0 24px 0;
   border-radius: 8px;
-  box-shadow: 0px 5px 50px 1px rgb(119 166 187 / 34%);
+  box-shadow: 0px 5px 50px 1px rgba(222, 181, 232, 0.34);
 }
 
 .card-info.hide {
@@ -67,13 +69,13 @@
 }
 
 .card-info a {
-  color: rgb(86 107 119);
+  color: rgb(181 186 205);
   font-size: 32px;
   transition: 0.6s;
 }
 
 .card-info a:hover {
-  color:rgb(114 167 169);
+  color:rgb(127, 124, 159);
 }
 
 .card-info-details {
@@ -137,6 +139,6 @@
 }
 
 .card-details-icons i {
-  color: rgb(86 107 119);
+  color: rgb(197, 176, 205);
   font-size: 20px;
 }

@@ -7,7 +7,7 @@
 
 .btn-nav {
   background-color: rgba(0,0,0,0);
-  color: rgb(114 167 169);
+  color: rgb(195 155 220);
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -17,11 +17,11 @@
 }
 
 .btn-nav:hover {
-  color: rgb(50, 108, 110);
+  color: rgb(164 187 232);
   transition: 0.5s;
 }
 
 .btn-nav.active {
-  color: rgb(50, 108, 110);
+  color: rgb(164 187 232);
   font-weight: 500;
 }

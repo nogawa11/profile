@@ -7,16 +7,21 @@ body {
   background: linear-gradient(85deg, rgb(249 255 247) 0%, rgb(242 255 254) 100%);
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
+  background-image: url('../images/121.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+  background-position: center;
 }
 
 h1 {
-  color: rgb(137 203 195);
+  color: rgb(142 172 232);
   font-family: 'Rozha One', serif;
   letter-spacing: 6px;
 }
 
 h3 {
-  color: rgb(114 167 169);
+  color: rgb(177 170 219);
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -34,7 +39,7 @@ h4 {
 }
 
 h5 {
-  color: rgb(138 162 168);
+  color: rgb(204 179 220);
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -42,7 +47,7 @@ h5 {
 }
 
 p {
-  color: rgb(86 107 119);
+  color: rgb(86, 92, 119);
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   font-weight: 300;
@@ -60,9 +65,19 @@ video {
   border-radius: 4px;
 }
 
+.slide {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.slide.hide {
+  display: none;
+}
+
 .footer {
   font-family: inherit;
-  color: rgb(138 162 168);
+  color: rgb(204 179 220);
   text-transform: uppercase;
   letter-spacing: 2px;
 }

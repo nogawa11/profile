@@ -1,5 +1,5 @@
 .btn-card-detail-back {
-  color: rgb(114 167 169);
+  color: rgb(177 170 219);
   background: none;
   font-family: 'Raleway', sans-serif;
   font-size: 12px;
@@ -11,7 +11,7 @@
 }
 
 .btn-card-detail-back:hover {
-  color: rgb(50, 108, 110);
+  color: rgb(152, 144, 200);
 }
 
 .btn-project {
@@ -28,7 +28,7 @@
 }
 
 .btn-card-details a {
-  background-color:rgb(89, 171, 174);
+  background-color:rgb(177 170 219);
   color: white;
   font-size: 12px;
   font-weight: 300;
@@ -40,6 +40,23 @@
 }
 
 .btn-card-details a:hover {
-  background-color:rgb(67, 137, 139);
+  background-color:rgb(164 187 232);
   color: white;
+}
+
+.btn-slide-1-right, .btn-slide-1-left, .btn-slide-2-right, .btn-slide-2-left {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fa-angle-left, .fa-angle-right {
+  color: rgb(204 179 220);
+  font-size: 30px;
+}
+
+.fa-angle-left:hover, .fa-angle-right:hover {
+  color: rgb(142 172 232);
+  font-size: 30px;
 }
