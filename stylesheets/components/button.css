@@ -54,6 +54,7 @@
 .fa-angle-left, .fa-angle-right {
   color: rgb(204 179 220);
   font-size: 30px;
+  transition: 0.5s;
 }
 
 .fa-angle-left:hover, .fa-angle-right:hover {

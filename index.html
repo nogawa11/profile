@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="content">
-      <div class="pt-5 ps-3 pe-3 pb-3 row d-flex justify-content-center">
+      <div class="main">
         <div class="text-center">
           <h1>NICOLE OGAWA</h1>
           <h5>JUNIOR WEB DEVELOPER</h5>
@@ -35,7 +35,7 @@
                   NeighborHUD
                 </div>
                 <button class="btn-project btn-neighborhud">
-                  <img src="images/map.png" alt="neighborhud">
+                  <img src="images/neighborhud.png" alt="neighborhud">
                 </button>
               </div>
               <div class="card-project uchuu">
@@ -102,6 +102,9 @@
                   <img src="images/6-interactiverating-screenshot.png" alt="Interactive Rating">
                 </button>
               </div>
+              <div class="slide-comment">
+                <p>* Click to see project details</p>
+              </div>
             </div>
             <button class="btn-slide-1-right">
               <i class="fas fa-angle-right"></i>
@@ -160,6 +163,7 @@
                   <img src="images/11-yelpcopy-screenshot.png" alt="Simple Yelp Copy">
                 </button>
               </div>
+              <p>* Click to see project details</p>
             </div>
             <button class="btn-slide-2-right">
               <i class="fas fa-angle-right"></i>
@@ -191,8 +195,9 @@
         <div class="card-details">
           <div class="card-details-images-neighborhud">
             <img src="images/map.png" alt="map">
-            <img src="images/feed.png" alt="feed">
+            <img src="images/feed.png" class="feed" alt="feed">
             <img src="images/route.png" alt="route">
+            <img src="images/report.png" class="report" alt="report">
           </div>
           <div>
             <p>A crime tracking and mapping app where users can see incidents happening in their area. Users can read crime news from English news sources in Japan and self-report their own incidents. The app also has a direction feature that maps safest route to a given destination.</p>
@@ -223,7 +228,7 @@
           <button class="btn-card-detail-back"><i class="fas fa-undo"></i> Back</button>
         </div>
         <div class="card-details">
-          <div class="card-details-images">
+          <div class="card-details-images uchuu-image">
             <img src="images/hp.png" alt="map">
           </div>
           <div>
@@ -253,7 +258,7 @@
           <button class="btn-card-detail-back"><i class="fas fa-undo"></i> Back</button>
         </div>
         <div class="card-details">
-          <div class="card-details-images">
+          <div class="card-details-images watchlist-image">
             <img src="images/movie-hp.png" alt="map">
           </div>
           <div>
@@ -282,7 +287,7 @@
           <button class="btn-card-detail-back"><i class="fas fa-undo"></i> Back</button>
         </div>
         <div class="card-details">
-          <div class="card-details-images">
+          <div class="card-details-images todo-list-video">
             <video width="auto" height="300" alt="todo-list" controls muted>
               <source src="videos/todo-list.mp4" type="video/mp4">
               Your browser does not support the video tag.
@@ -311,7 +316,7 @@
           <button class="btn-card-detail-back"><i class="fas fa-undo"></i> Back</button>
         </div>
         <div class="card-details">
-          <div class="card-details-images">
+          <div class="card-details-images countdown-video">
             <video width="auto" height="250" alt="countdown" controls muted>
               <source src="videos/launch-countdown.mp4" type="video/mp4">
               Your browser does not support the video tag.
@@ -340,7 +345,7 @@
           <button class="btn-card-detail-back"><i class="fas fa-undo"></i> Back</button>
         </div>
         <div class="card-details">
-          <div class="card-details-images">
+          <div class="card-details-images ip-tracker-video">
             <video width="auto" height="250" alt="ip-tracker" controls muted>
               <source src="videos/ip-address-tracker.mp4" type="video/mp4">
               Your browser does not support the video tag.
@@ -368,7 +373,7 @@
           <button class="btn-card-detail-back"><i class="fas fa-undo"></i> Back</button>
         </div>
         <div class="card-details">
-          <div class="card-details-images">
+          <div class="card-details-images job-listings-filter-video">
             <video width="auto" height="250" alt="job-listings-filter" controls muted>
               <source src="videos/job-listings-filter.mp4" type="video/mp4">
               Your browser does not support the video tag.
@@ -397,7 +402,7 @@
           <button class="btn-card-detail-back"><i class="fas fa-undo"></i> Back</button>
         </div>
         <div class="card-details">
-          <div class="card-details-images">
+          <div class="card-details-images tip-calculator-video">
             <video width="auto" height="250" alt="tip-calculator" controls muted>
               <source src="videos/tip-calculator.mp4" type="video/mp4">
               Your browser does not support the video tag.
@@ -426,7 +431,7 @@
           <button class="btn-card-detail-back"><i class="fas fa-undo"></i> Back</button>
         </div>
         <div class="card-details">
-          <div class="card-details-images">
+          <div class="card-details-images interactive-rating-video">
             <video width="auto" height="250" alt="interactive-rating" controls muted>
               <source src="videos/interactive-rating.mp4" type="video/mp4">
               Your browser does not support the video tag.
@@ -455,7 +460,7 @@
           <button class="btn-card-detail-back"><i class="fas fa-undo"></i> Back</button>
         </div>
         <div class="card-details">
-          <div class="card-details-images">
+          <div class="card-details-images simple-airbnb-copy-image">
             <img src="images/8-simpleairbnb-screenshot.png" alt="simple-airbnb-copy">
           </div>
           <div>
@@ -484,7 +489,7 @@
           <button class="btn-card-detail-back"><i class="fas fa-undo"></i> Back</button>
         </div>
         <div class="card-details">
-          <div class="card-details-images">
+          <div class="card-details-images simple-landing-page-image">
             <img src="images/10-landingpage-screenshot.png" alt="simple-landing-page">
           </div>
           <div>
@@ -509,7 +514,7 @@
           <button class="btn-card-detail-back"><i class="fas fa-undo"></i> Back</button>
         </div>
         <div class="card-details">
-          <div class="card-details-images">
+          <div class="card-details-images simple-wikinimous-copy-image">
             <img src="images/9-wikinimouscopy-screenshot.png" alt="simple-wikinimous-copy">
           </div>
           <div>
@@ -535,7 +540,7 @@
           <button class="btn-card-detail-back"><i class="fas fa-undo"></i> Back</button>
         </div>
         <div class="card-details">
-          <div class="card-details-images">
+          <div class="card-details-images medium-article-copy-image">
             <img src="images/13-Mediumcopy-screenshot.png" alt="medium-article-copy">
           </div>
           <div>
@@ -560,7 +565,7 @@
           <button class="btn-card-detail-back"><i class="fas fa-undo"></i> Back</button>
         </div>
         <div class="card-details">
-          <div class="card-details-images">
+          <div class="card-details-images longest-word-game-image">
             <img src="images/7-longestwordgame-screenshot.png" alt="longest-word-game">
           </div>
           <div>
@@ -589,7 +594,7 @@
           <button class="btn-card-detail-back"><i class="fas fa-undo"></i> Back</button>
         </div>
         <div class="card-details">
-          <div class="card-details-images">
+          <div class="card-details-images simple-yelp-copy-image">
             <img src="images/11-yelpcopy-screenshot.png" alt="simple-yelp-copy">
           </div>
           <div>
