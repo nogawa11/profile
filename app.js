@@ -19,6 +19,7 @@ const simpleWikinimousCopy = document.querySelector(".simple-wikinimous-copy");
 const mediumArticleCopy = document.querySelector(".medium-article-copy");
 const longestWordGame = document.querySelector(".longest-word-game");
 const simpleYelpCopy = document.querySelector(".simple-yelp-copy");
+const rockPaperScissors = document.querySelector(".rock-paper-scissors");
 
 const neighborhudCard = document.querySelector(".card-neighborhud");
 const uchuuCard = document.querySelector(".card-uchuu");
@@ -35,6 +36,7 @@ const simpleWikinimousCopyCard = document.querySelector(".card-simple-wikinimous
 const mediumArticleCopyCard = document.querySelector(".card-medium-article-copy");
 const longestWordGameCard = document.querySelector(".card-longest-word-game");
 const simpleYelpCopyCard = document.querySelector(".card-simple-yelp-copy");
+const rockPaperScissorsCard = document.querySelector(".card-rock-paper-scissors");
 
 const detailCards = document.querySelectorAll(".card-info-details");
 
@@ -178,6 +180,14 @@ tipCalculator.addEventListener("click", (event) => {
     card.classList.add("hide");
   });
   tipCalculatorCard.classList.remove("hide");
+});
+
+rockPaperScissors.addEventListener("click", (event) => {
+  event.preventDefault();
+  cards.forEach((card) => {
+    card.classList.add("hide");
+  });
+  rockPaperScissorsCard.classList.remove("hide");
 });
 
 interactiveRating.addEventListener("click", (event) => {
