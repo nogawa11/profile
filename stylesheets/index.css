@@ -245,7 +245,8 @@ video {
   .job-listings-filter-video video,
   .tip-calculator-video video,
   .todo-list-video video,
-  .rock-paper-scissors-video video {
+  .rock-paper-scissors-video video,
+  .card-calculator video {
     height: 150px;
   }
   .uchuu-image img,
@@ -306,7 +307,8 @@ video {
   .tip-calculator-video video,
   .uchuu-image img,
   .watchlist-image img,
-  .rock-paper-scissors-video video {
+  .rock-paper-scissors-video video,
+  .card-calculator video {
     height: 150px;
   }
   .countdown-video video,
@@ -359,7 +361,8 @@ video {
   .tip-calculator-video video,
   .uchuu-image img,
   .watchlist-image img,
-  .rock-paper-scissors-video video {
+  .rock-paper-scissors-video video,
+  .card-calculator video {
     height: 150px;
   }
   .countdown-video video,
@@ -407,7 +410,8 @@ video {
   .ip-tracker-video video,
   .job-listings-filter-video video,
   .tip-calculator-video video,
-  .rock-paper-scissors-video video {
+  .rock-paper-scissors-video video,
+  .card-calculator video {
     height: 200px;
   }
 }
