@@ -258,7 +258,8 @@ video {
   .simple-airbnb-copy-image img,
   .simple-landing-page-image img,
   .simple-wikinimous-copy-image img,
-  .simple-yelp-copy-image img {
+  .simple-yelp-copy-image img,
+  .pixelart-video video {
     height: 125px;
   }
 }
@@ -308,7 +309,8 @@ video {
   .uchuu-image img,
   .watchlist-image img,
   .rock-paper-scissors-video video,
-  .card-calculator video {
+  .card-calculator video,
+  .pixelart-video video {
     height: 150px;
   }
   .countdown-video video,
@@ -362,7 +364,8 @@ video {
   .uchuu-image img,
   .watchlist-image img,
   .rock-paper-scissors-video video,
-  .card-calculator video {
+  .card-calculator video,
+  .pixelart-video video {
     height: 150px;
   }
   .countdown-video video,
@@ -411,6 +414,7 @@ video {
   .job-listings-filter-video video,
   .tip-calculator-video video,
   .rock-paper-scissors-video video,
+  .pixelart-video video,
   .card-calculator video {
     height: 200px;
   }
@@ -439,7 +443,8 @@ video {
   .simple-airbnb-copy-image img,
   .simple-landing-page-image img,
   .simple-wikinimous-copy-image img,
-  .simple-yelp-copy-image img {
+  .simple-yelp-copy-image img,
+  .pixelart-video video {
     height: 200px;
   }
 }
@@ -459,7 +464,8 @@ video {
     height: 150px;
   }
   .longest-word-game-image img,
-  .medium-article-copy-image img {
+  .medium-article-copy-image img,
+  .pixelart-video video {
     height: 200px;
   }
 }
@@ -469,7 +475,8 @@ video {
     height: 200px;
   }
   .longest-word-game-image img,
-  .medium-article-copy-image img {
+  .medium-article-copy-image img,
+  .pixelart-video video {
     height: 200px;
   }
 }

@@ -21,6 +21,7 @@ const longestWordGame = document.querySelector(".longest-word-game");
 const simpleYelpCopy = document.querySelector(".simple-yelp-copy");
 const rockPaperScissors = document.querySelector(".rock-paper-scissors");
 const calculator = document.querySelector(".calculator");
+const pixelart = document.querySelector(".pixelart");
 
 const neighborhudCard = document.querySelector(".card-neighborhud");
 const uchuuCard = document.querySelector(".card-uchuu");
@@ -39,6 +40,7 @@ const longestWordGameCard = document.querySelector(".card-longest-word-game");
 const simpleYelpCopyCard = document.querySelector(".card-simple-yelp-copy");
 const rockPaperScissorsCard = document.querySelector(".card-rock-paper-scissors");
 const calculatorCard = document.querySelector(".card-calculator");
+const pixelartCard = document.querySelector(".card-pixelart");
 
 const detailCards = document.querySelectorAll(".card-info-details");
 
@@ -254,6 +256,14 @@ simpleYelpCopy.addEventListener("click", (event) => {
     card.classList.add("hide");
   });
   simpleYelpCopyCard.classList.remove("hide");
+});
+
+pixelart.addEventListener("click", (event) => {
+  event.preventDefault();
+  cards.forEach((card) => {
+    card.classList.add("hide");
+  });
+  pixelartCard.classList.remove("hide");
 });
 
 backBtns.forEach((btn) => {
