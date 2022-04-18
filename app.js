@@ -22,6 +22,8 @@ const simpleYelpCopy = document.querySelector(".simple-yelp-copy");
 const rockPaperScissors = document.querySelector(".rock-paper-scissors");
 const calculator = document.querySelector(".calculator");
 const pixelart = document.querySelector(".pixelart");
+const tenzies = document.querySelector(".tenzies");
+const memeGenerator = document.querySelector(".meme-generator");
 
 const neighborhudCard = document.querySelector(".card-neighborhud");
 const uchuuCard = document.querySelector(".card-uchuu");
@@ -41,6 +43,8 @@ const simpleYelpCopyCard = document.querySelector(".card-simple-yelp-copy");
 const rockPaperScissorsCard = document.querySelector(".card-rock-paper-scissors");
 const calculatorCard = document.querySelector(".card-calculator");
 const pixelartCard = document.querySelector(".card-pixelart");
+const memeGeneratorCard = document.querySelector(".card-meme-generator");
+const tenziesCard = document.querySelector(".card-tenzies");
 
 const detailCards = document.querySelectorAll(".card-info-details");
 
@@ -56,11 +60,14 @@ const slideOneRightBtn = document.querySelector(".btn-slide-1-right");
 const slideOneLeftBtn = document.querySelector(".btn-slide-1-left");
 const slideTwoRightBtn = document.querySelector(".btn-slide-2-right");
 const slideTwoLeftBtn = document.querySelector(".btn-slide-2-left");
+const slideThreeRightBtn = document.querySelector(".btn-slide-3-right");
+const slideThreeLeftBtn = document.querySelector(".btn-slide-3-left");
 
 const slideOne = document.querySelector(".slide-1")
 const slideTwo = document.querySelector(".slide-2")
+const slideThree = document.querySelector(".slide-3")
 
-const slides = [slideOne, slideTwo]
+const slides = [slideOne, slideTwo, slideThree]
 
 projectNavBtn.addEventListener("click", (event) => {
   event.preventDefault();
@@ -266,6 +273,22 @@ pixelart.addEventListener("click", (event) => {
   pixelartCard.classList.remove("hide");
 });
 
+tenzies.addEventListener("click", (event) => {
+  event.preventDefault();
+  cards.forEach((card) => {
+    card.classList.add("hide");
+  });
+  tenziesCard.classList.remove("hide");
+});
+
+memeGenerator.addEventListener("click", (event) => {
+  event.preventDefault();
+  cards.forEach((card) => {
+    card.classList.add("hide");
+  });
+  memeGeneratorCard.classList.remove("hide");
+});
+
 backBtns.forEach((btn) => {
   btn.addEventListener("click", (event) => {
     event.preventDefault();
@@ -292,7 +315,7 @@ slideOneLeftBtn.addEventListener("click", (event) => {
   slides.forEach((slide) => {
     slide.classList.add("hide");
   });
-  slideTwo.classList.remove("hide");
+  slideThree.classList.remove("hide");
 })
 
 slideTwoRightBtn.addEventListener("click", (event) => {
@@ -300,7 +323,7 @@ slideTwoRightBtn.addEventListener("click", (event) => {
   slides.forEach((slide) => {
     slide.classList.add("hide");
   });
-  slideOne.classList.remove("hide");
+  slideThree.classList.remove("hide");
 })
 
 slideTwoLeftBtn.addEventListener("click", (event) => {
@@ -309,4 +332,20 @@ slideTwoLeftBtn.addEventListener("click", (event) => {
     slide.classList.add("hide");
   });
   slideOne.classList.remove("hide");
+})
+
+slideThreeRightBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  slides.forEach((slide) => {
+    slide.classList.add("hide");
+  });
+  slideOne.classList.remove("hide");
+})
+
+slideThreeLeftBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  slides.forEach((slide) => {
+    slide.classList.add("hide");
+  });
+  slideTwo.classList.remove("hide");
 })

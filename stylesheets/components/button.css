@@ -47,7 +47,9 @@
 .btn-slide-1-right,
 .btn-slide-1-left,
 .btn-slide-2-right,
-.btn-slide-2-left {
+.btn-slide-2-left,
+.btn-slide-3-right,
+.btn-slide-3-left {
   background: none;
   border: none;
   padding: 0;

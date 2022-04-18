@@ -108,16 +108,19 @@ video {
     font-size: 12px;
   }
   .slide-1.hide,
-  .slide-2.hide {
+  .slide-2.hide
+  .slide-3.hide {
     display: flex;
   }
-  .slide-1 {
+  .slide-1, .slide-2 {
     margin-bottom: 12px;
   }
   .btn-slide-1-left,
   .btn-slide-1-right,
   .btn-slide-2-left,
-  .btn-slide-2-right {
+  .btn-slide-2-right,
+  .btn-slide-3-left,
+  .btn-slide-3-right {
     display: none;
   }
   .slide-comment {
@@ -259,7 +262,9 @@ video {
   .simple-landing-page-image img,
   .simple-wikinimous-copy-image img,
   .simple-yelp-copy-image img,
-  .pixelart-video video {
+  .pixelart-video video,
+  .meme-generator-video video,
+  .tenzies-video video {
     height: 125px;
   }
 }
@@ -310,7 +315,9 @@ video {
   .watchlist-image img,
   .rock-paper-scissors-video video,
   .card-calculator video,
-  .pixelart-video video {
+  .pixelart-video video,
+  .meme-generator-video video,
+  .tenzies-video video {
     height: 150px;
   }
   .countdown-video video,
@@ -365,7 +372,9 @@ video {
   .watchlist-image img,
   .rock-paper-scissors-video video,
   .card-calculator video,
-  .pixelart-video video {
+  .pixelart-video video,
+  .meme-generator-video video,
+  .tenzies-video video {
     height: 150px;
   }
   .countdown-video video,
@@ -415,7 +424,9 @@ video {
   .tip-calculator-video video,
   .rock-paper-scissors-video video,
   .pixelart-video video,
-  .card-calculator video {
+  .card-calculator video,
+  .meme-generator-video video,
+  .tenzies-video video  {
     height: 200px;
   }
 }
@@ -444,7 +455,9 @@ video {
   .simple-landing-page-image img,
   .simple-wikinimous-copy-image img,
   .simple-yelp-copy-image img,
-  .pixelart-video video {
+  .pixelart-video video,
+  .meme-generator-video video,
+  .tenzies-video video {
     height: 200px;
   }
 }
@@ -465,7 +478,9 @@ video {
   }
   .longest-word-game-image img,
   .medium-article-copy-image img,
-  .pixelart-video video {
+  .pixelart-video video,
+  .meme-generator-video video,
+  .tenzies-video video {
     height: 200px;
   }
 }
@@ -476,7 +491,9 @@ video {
   }
   .longest-word-game-image img,
   .medium-article-copy-image img,
-  .pixelart-video video {
+  .pixelart-video video,
+  .meme-generator-video video,
+  .tenzies-video video {
     height: 200px;
   }
 }
