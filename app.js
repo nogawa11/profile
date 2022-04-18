@@ -24,6 +24,7 @@ const calculator = document.querySelector(".calculator");
 const pixelart = document.querySelector(".pixelart");
 const tenzies = document.querySelector(".tenzies");
 const memeGenerator = document.querySelector(".meme-generator");
+const trivia = document.querySelector(".trivia");
 
 const neighborhudCard = document.querySelector(".card-neighborhud");
 const uchuuCard = document.querySelector(".card-uchuu");
@@ -45,6 +46,7 @@ const calculatorCard = document.querySelector(".card-calculator");
 const pixelartCard = document.querySelector(".card-pixelart");
 const memeGeneratorCard = document.querySelector(".card-meme-generator");
 const tenziesCard = document.querySelector(".card-tenzies");
+const triviaCard = document.querySelector(".card-trivia");
 
 const detailCards = document.querySelectorAll(".card-info-details");
 
@@ -279,6 +281,14 @@ tenzies.addEventListener("click", (event) => {
     card.classList.add("hide");
   });
   tenziesCard.classList.remove("hide");
+});
+
+trivia.addEventListener("click", (event) => {
+  event.preventDefault();
+  cards.forEach((card) => {
+    card.classList.add("hide");
+  });
+  triviaCard.classList.remove("hide");
 });
 
 memeGenerator.addEventListener("click", (event) => {

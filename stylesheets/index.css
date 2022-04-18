@@ -108,9 +108,9 @@ video {
     font-size: 12px;
   }
   .slide-1.hide,
-  .slide-2.hide
+  .slide-2.hide,
   .slide-3.hide {
-    display: flex;
+    display: grid;
   }
   .slide-1, .slide-2 {
     margin-bottom: 12px;
@@ -249,7 +249,8 @@ video {
   .tip-calculator-video video,
   .todo-list-video video,
   .rock-paper-scissors-video video,
-  .card-calculator video {
+  .card-calculator video,
+  .trivia-video video {
     height: 150px;
   }
   .uchuu-image img,
@@ -322,7 +323,8 @@ video {
   }
   .countdown-video video,
   .interactive-rating-video video,
-  .todo-list-video video {
+  .todo-list-video video,
+  .trivia-video video {
     height: 200px;
   }
 }
@@ -379,6 +381,7 @@ video {
   }
   .countdown-video video,
   .interactive-rating-video video,
+  .trivia-video video,
   .todo-list-video video {
     height: 200px;
   }
