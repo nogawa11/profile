@@ -242,6 +242,9 @@ video {
     font-size: 10px;
     padding: 2px 8px;
   }
+  .countries-video video {
+    height: 125px;
+  }
   .countdown-video video,
   .interactive-rating-video video,
   .ip-tracker-video video,
@@ -310,6 +313,7 @@ video {
     height: 125px;
   }
   .ip-tracker-video video,
+  .countries-video video,
   .job-listings-filter-video video,
   .tip-calculator-video video,
   .uchuu-image img,
@@ -368,6 +372,7 @@ video {
     height: 125px;
   }
   .ip-tracker-video video,
+  .countries-video video,
   .job-listings-filter-video video,
   .tip-calculator-video video,
   .uchuu-image img,
@@ -423,6 +428,7 @@ video {
     height: 175px;
   }
   .ip-tracker-video video,
+  .countries-video video,
   .job-listings-filter-video video,
   .tip-calculator-video video,
   .rock-paper-scissors-video video,
@@ -459,6 +465,7 @@ video {
   .simple-wikinimous-copy-image img,
   .simple-yelp-copy-image img,
   .pixelart-video video,
+  .countries-video video,
   .meme-generator-video video,
   .tenzies-video video {
     height: 200px;
@@ -483,6 +490,7 @@ video {
   .medium-article-copy-image img,
   .pixelart-video video,
   .meme-generator-video video,
+  .countries-video video,
   .tenzies-video video {
     height: 200px;
   }
@@ -495,6 +503,7 @@ video {
   .longest-word-game-image img,
   .medium-article-copy-image img,
   .pixelart-video video,
+  .countries-video video,
   .meme-generator-video video,
   .tenzies-video video {
     height: 200px;
