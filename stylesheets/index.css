@@ -247,6 +247,7 @@ video {
   }
   .countdown-video video,
   .interactive-rating-video video,
+  .weather-video video,
   .ip-tracker-video video,
   .job-listings-filter-video video,
   .tip-calculator-video video,
@@ -327,6 +328,7 @@ video {
   }
   .countdown-video video,
   .interactive-rating-video video,
+  .weather-video video,
   .todo-list-video video,
   .trivia-video video {
     height: 200px;
@@ -386,6 +388,7 @@ video {
   }
   .countdown-video video,
   .interactive-rating-video video,
+  .weather-video video,
   .trivia-video video,
   .todo-list-video video {
     height: 200px;
