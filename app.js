@@ -27,6 +27,7 @@ const memeGenerator = document.querySelector(".meme-generator");
 const trivia = document.querySelector(".trivia");
 const countries = document.querySelector(".countries");
 const weather = document.querySelector(".weather");
+const memory = document.querySelector(".memory");
 
 const neighborhudCard = document.querySelector(".card-neighborhud");
 const uchuuCard = document.querySelector(".card-uchuu");
@@ -51,6 +52,7 @@ const tenziesCard = document.querySelector(".card-tenzies");
 const triviaCard = document.querySelector(".card-trivia");
 const countriesCard = document.querySelector(".card-countries");
 const weatherCard = document.querySelector(".card-weather");
+const memoryCard = document.querySelector(".card-memory");
 
 const detailCards = document.querySelectorAll(".card-info-details");
 
@@ -309,6 +311,14 @@ weather.addEventListener("click", (event) => {
     card.classList.add("hide");
   });
   weatherCard.classList.remove("hide");
+});
+
+memory.addEventListener("click", (event) => {
+  event.preventDefault();
+  cards.forEach((card) => {
+    card.classList.add("hide");
+  });
+  memoryCard.classList.remove("hide");
 });
 
 memeGenerator.addEventListener("click", (event) => {

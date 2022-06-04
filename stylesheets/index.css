@@ -254,6 +254,7 @@ video {
   .todo-list-video video,
   .rock-paper-scissors-video video,
   .card-calculator video,
+  .memory-video video,
   .trivia-video video {
     height: 150px;
   }
@@ -322,6 +323,7 @@ video {
   .rock-paper-scissors-video video,
   .card-calculator video,
   .pixelart-video video,
+  .memory-video video,
   .meme-generator-video video,
   .tenzies-video video {
     height: 150px;
@@ -389,6 +391,7 @@ video {
   .countdown-video video,
   .interactive-rating-video video,
   .weather-video video,
+  .memory-video video,
   .trivia-video video,
   .todo-list-video video {
     height: 200px;
